@@ -73,4 +73,20 @@ public class Order {
     }
 
     public void setPayment(Payment payment) {  this.payment = payment; }
+
+    public Set<OrderItem> getItems() {
+        return items;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", moment=" + moment +
+                ", status=" + status +
+                ", client=" + client +
+                ", payment=" + payment +
+                ", items=" + items +
+                '}';
+    }
 }
