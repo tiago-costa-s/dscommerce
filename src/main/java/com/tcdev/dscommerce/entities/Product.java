@@ -28,7 +28,6 @@ public class Product {
     @OneToMany(mappedBy = "id.product")
     private Set<OrderItem> Items =  new HashSet<>();
 
-
     public Product() {
     }
 
@@ -85,5 +84,9 @@ public class Product {
 
     public Set<Category> getCategories() {
         return categories;
+    }
+
+    public Set<OrderItem> getItems() {
+        return Items;
     }
 }
